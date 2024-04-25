@@ -27,7 +27,7 @@ export class Product2Controller {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.product2Service.findOne(+id);
+    return this.product2Service.findOne(id);
   }
 
   @Patch(':id')

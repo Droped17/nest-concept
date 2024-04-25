@@ -19,7 +19,7 @@ export class Product2Service {
     return this.productModel.find().exec();
   }
 
-  async findOne(id: number): Promise<Product> {
+  async findOne(id: string): Promise<Product> {
     return this.productModel.findById(id).exec();
   }
 
